@@ -1,0 +1,105 @@
+:root {
+  --color-accent-1: #0080ff;
+  --color-accent-2: #ff4040;
+}
+
+@media (prefers-color-scheme: dark) {
+  img {
+    filter: invert(1);
+  }
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('fonts/Lora-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('fonts/HelveticaNeue-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('fonts/Inconsolata-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Scope One';
+  src: url('fonts/ScopeOne-Regular.ttf') format('truetype');
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 1vh 1vw;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  body {
+    width: fit-content;
+    text-align: justify;
+    font-size: 1.5em;
+  }
+}
+
+section + section {
+  margin-block-start: 2em;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.5em;
+  margin: auto;
+  max-width: 900px;
+  padding-inline: 1ch;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Lora', serif;
+  font-weight: normal;
+  margin: 0;
+  text-align: left;
+  line-height: 1.2em;
+}
+
+h1 { font-size: 2.0em; margin-top: 24px; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.2em; }
+
+blockquote {
+  font-family: 'Scope One', serif;
+  margin: 0;
+  padding-left: 2ch;
+  border-left: 2px solid var(--color-accent-1);
+}
+
+code {
+  font-family: 'Inconsolata', monospace;
+  font-size: 1em;
+}
+
+figure {
+  max-width: calc(100vw - 2ch);
+  margin: 1em auto 1em auto;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  border-spacing: 1ch;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--color-accent-1);
+}
+a:hover {
+  text-decoration-color: var(--color-accent-2);
+}
